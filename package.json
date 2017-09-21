@@ -12,9 +12,10 @@
   "module": "./dist/fela-react-helpers.es.js",
   "scripts": {
     "build": "rimraf dist/ && node ./rollup.js",
+    "test": "jest",
     "lint": "eslint \"**/*.js\"",
     "prettier": "prettier-eslint \"**/*.js\" --write ",
-    "prepublishOnly": "yarn lint && yarn build"
+    "prepublishOnly": "yarn lint && yarn build && yarn test"
   },
   "dependencies": {
     "fela": "^5.2.0",
@@ -30,7 +31,9 @@
     "eslint": "^4.7.1",
     "eslint-config-airbnb-base": "^12.0.0",
     "eslint-plugin-import": "^2.7.0",
+    "jest": "^21.1.0",
     "prettier-eslint-cli": "4.3.2",
+    "react": "^16.0.0-rc.3",
     "rimraf": "^2.6.2",
     "rollup": "0.48.2",
     "rollup-plugin-babel": "^3.0.2"
