@@ -1,29 +1,40 @@
-# joi-manager · [![npm](https://img.shields.io/npm/v/joi-manager.svg)](https://www.npmjs.com/package/joi-manager)
-
-> Manage Joi schemas with joy.
+# fela-react-helpers · [![npm](https://img.shields.io/npm/v/fela-react-helpers.svg)](https://www.npmjs.com/package/fela-react-helpers)
 
 ## API
 
-### `new JoiManager([defaultOptions])`
+### `withStyle`
 
-__Arguments__
+```jsx
+import React from 'react';
+import {withStyle} from 'fela-react-helpers';
 
-- `[defaultOptions]` _(Object)_: Optional. Options that will be passed
-to `Joi.validate`.
+const rule = props => ({
+  color: props.color,
+  backgroundColor: '#f00',
+});
 
-__Returns__
-
-`JoiManager` instance.
+@withStyle(rule)
+class Button extends React.Component {
+  render() {
+    const {className, children} = this.props;
+    return <button className={className}>{children}</button>;
+  }
+}
+```
 
 ---
 
-### `JoiManager`
+### `renderToPrettyString`
 
-__Methods__
+```js
+import {renderToPrettyString} from 'fela-react-helpers/testTools';
 
-- `add(schemaName, schema)` → _this_: Adds a new schema to the list.
-- `get(schemaName)` → _schema_: Retrieves a schema from the list by
-its name.
-- `validate(schemaName, value, [options])` → _*_: Validates a `value`
-according to schema that was added with the `add` method. `options` are
-merged with `defaultOptions`.
+const renderer = createRenderer();
+
+// ...
+// Usually you will render a React component here
+// ...
+
+const styles = renderToPrettyString(renderer);
+// `styles` will be a string with CSS code formatted with Prettier
+```
