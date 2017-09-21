@@ -37,7 +37,7 @@ rollup
     })
     .then((bundle) => {
         bundle.write({
-            file: './testTools.js',
+            file: './dist/fela-react-helpers.testTools.js',
             format: 'cjs',
             sourcemap: true,
         });

@@ -11,7 +11,7 @@
   "main": "./dist/fela-react-helpers.cjs.js",
   "module": "./dist/fela-react-helpers.es.js",
   "scripts": {
-    "build": "rimraf dist/ testTools.* && node ./rollup.js",
+    "build": "rimraf dist/ && node ./rollup.js",
     "lint": "eslint \"**/*.js\"",
     "prettier": "prettier-eslint \"**/*.js\" --write ",
     "prepublishOnly": "yarn lint && yarn build"
@@ -45,7 +45,8 @@
   ],
   "files": [
     "src",
-    "dist"
+    "dist",
+    "testTools.js"
   ],
   "jest": {
     "roots": [
