@@ -1,0 +1,55 @@
+{
+  "name": "fela-react-helpers",
+  "version": "0.0.1",
+  "description": "",
+  "author": "Vlad Zhukov (http://github.com/vlad-zhukov)",
+  "license": "MIT",
+  "repository": "vlad-zhukov/fela-react-helpers",
+  "bugs": {
+    "url": "https://github.com/vlad-zhukov/fela-react-helpers/issues"
+  },
+  "main": "./dist/fela-react-helpers.cjs.js",
+  "module": "./dist/fela-react-helpers.es.js",
+  "scripts": {
+    "build": "rimraf dist/ testTools.* && node ./rollup.js",
+    "lint": "eslint \"**/*.js\"",
+    "prettier": "prettier-eslint \"**/*.js\" --write ",
+    "prepublishOnly": "yarn lint && yarn build"
+  },
+  "dependencies": {
+    "fela": "^5.2.0",
+    "fela-tools": "^5.0.7",
+    "prettier": "^1.7.0",
+    "prop-types": "^15.5.10"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-eslint": "^7.2.3",
+    "babel-plugin-external-helpers": "^6.22.0",
+    "babel-preset-env": "^1.6.0",
+    "eslint": "^4.7.1",
+    "eslint-config-airbnb-base": "^12.0.0",
+    "eslint-plugin-import": "^2.7.0",
+    "prettier-eslint-cli": "4.3.2",
+    "rimraf": "^2.6.2",
+    "rollup": "0.48.2",
+    "rollup-plugin-babel": "^3.0.2"
+  },
+  "peerDependencies": {
+    "react": ">=15"
+  },
+  "keywords": [
+    "fela",
+    "react-fela",
+    "react"
+  ],
+  "files": [
+    "src",
+    "dist"
+  ],
+  "jest": {
+    "roots": [
+      "<rootDir>/__tests__/"
+    ]
+  }
+}
