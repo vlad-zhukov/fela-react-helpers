@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should prettify styles 1`] = `
+"
+html, body {
+  box-sizing: border-box;
+  margin: 0
+}
+p {
+  font-size: 14px
+}
+"
+`;

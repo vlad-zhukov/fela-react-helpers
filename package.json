@@ -20,7 +20,7 @@
   "dependencies": {
     "fela-bindings": "^1.0.0",
     "fela-tools": "^5.0.8",
-    "prettier": "^1.7.0",
+    "js-beautify": "^1.7.3",
     "prop-types": "^15.5.10",
     "react-fela": "^6.0.0"
   },
