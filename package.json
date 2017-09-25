@@ -18,19 +18,21 @@
     "prepublishOnly": "yarn lint && yarn build && yarn test"
   },
   "dependencies": {
-    "fela": "^5.2.0",
-    "fela-tools": "^5.0.7",
+    "fela-bindings": "^1.0.0",
+    "fela-tools": "^5.0.8",
     "prettier": "^1.7.0",
-    "prop-types": "^15.5.10"
+    "prop-types": "^15.5.10",
+    "react-fela": "^6.0.0"
   },
   "devDependencies": {
     "babel-core": "^6.26.0",
     "babel-eslint": "^7.2.3",
     "babel-plugin-external-helpers": "^6.22.0",
     "babel-preset-env": "^1.6.0",
-    "eslint": "^4.7.1",
+    "eslint": "^4.7.2",
     "eslint-config-airbnb-base": "^12.0.0",
     "eslint-plugin-import": "^2.7.0",
+    "fela": "^6.0.0",
     "jest": "^21.1.0",
     "prettier-eslint-cli": "4.3.2",
     "react": "^16.0.0-rc.3",
