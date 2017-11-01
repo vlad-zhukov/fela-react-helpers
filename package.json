@@ -1,6 +1,6 @@
 {
   "name": "fela-react-helpers",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "",
   "author": "Vlad Zhukov (http://github.com/vlad-zhukov)",
   "license": "MIT",
@@ -23,10 +23,10 @@
     "react-fela": "^6.0.3"
   },
   "devDependencies": {
-    "babel-core": "^7.0.0-beta.2",
+    "babel-core": "7.0.0-beta.2",
     "babel-eslint": "^8.0.1",
-    "babel-plugin-external-helpers": "^7.0.0-beta.2",
-    "babel-preset-env": "^2.0.0-beta.2",
+    "babel-plugin-external-helpers": "7.0.0-beta.2",
+    "babel-preset-env": "2.0.0-beta.2",
     "eslint": "^4.10.0",
     "eslint-config-airbnb-base": "^12.1.0",
     "eslint-plugin-import": "^2.8.0",
