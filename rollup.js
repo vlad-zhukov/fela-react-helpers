@@ -2,9 +2,11 @@
 
 const rollup = require('rollup');
 const babel = require('rollup-plugin-babel');
+const {list: babelHelpersList} = require('babel-helpers'); // eslint-disable-line
 const pkg = require('./package.json');
 
-const plugins = [babel()];
+const externalHelpersWhitelist = babelHelpersList.filter(helperName => helperName !== 'asyncGenerator');
+const plugins = [babel({externalHelpersWhitelist})];
 const external = Object.keys(pkg.dependencies).concat(Object.keys(pkg.peerDependencies));
 
 rollup

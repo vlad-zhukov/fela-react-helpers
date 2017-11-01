@@ -1,9 +1,0 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
-
-exports[`should return an array and omit innerRef 1`] = `
-Array [
-  "foo",
-  "bar",
-  "baz",
-]
-`;
