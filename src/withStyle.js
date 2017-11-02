@@ -1,5 +1,5 @@
-import {createComponentWithProxy} from 'react-fela';
+import {createComponent} from 'react-fela';
 
 export default function withStyle(rule) {
-    return Component => createComponentWithProxy(rule, Component);
+    return Component => createComponent(rule, Component, Object.keys);
 }
